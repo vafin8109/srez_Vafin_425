@@ -76,7 +76,7 @@ header {
 }
 
 .menu__btn:hover {
-    color: #ffcc00; 
+    color: #ffcc00;
 }
 
 /* Стили для подменю */
@@ -94,8 +94,10 @@ header {
 }
 
 .menu__elem:hover .submenu {
-    display: block; /* Показываем подменю при наведении */
-    animation: fadeIn 0.3s; /* Анимация появления */
+    display: block;
+    /* Показываем подменю при наведении */
+    animation: fadeIn 0.3s;
+    /* Анимация появления */
 }
 
 .submenu__wrapper {
@@ -111,7 +113,7 @@ header {
 }
 
 .submenu__elem:hover {
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
 }
 
 /* header */
@@ -151,14 +153,16 @@ header {
     flex-direction: column;
     gap: 30px;
 }
+
 .slider__body {
     max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
 }
+
 .slider__arrow {
-    
+
     z-index: 100;
     display: flex;
     align-items: center;
@@ -169,24 +173,30 @@ header {
     cursor: pointer;
     border-radius: 5px;
 }
+
 .left {
     left: 40px;
 }
+
 .right {
     right: 40px;
 }
+
 .slider__images {
     display: flex;
     transition: .3s ease-in;
 }
+
 .slider__item {
     flex: 0 0 100%;
 }
-.slider__item img{
+
+.slider__item img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
+
 /* .active {
 } */
 
@@ -196,6 +206,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .slider__dot {
     width: 8px;
     aspect-ratio: 1;
@@ -204,7 +215,8 @@ header {
     cursor: pointer;
     transition: .3s ease-in;
 }
-.slider__dot.active{
+
+.slider__dot.active {
     width: 12px;
     background-color: black;
 
@@ -302,7 +314,7 @@ header {
     font-size: 18px;
     line-height: 150%;
     border-radius: 6px;
-    background-color:  #234338;
+    background-color: #234338;
 }
 
 .but {
@@ -429,7 +441,7 @@ span {
 
 /* phone */
 
-.phone{
+.phone {
     padding: 20px 25px;
     border: 2px solid #2C5446;
     color: #CBEA7B;
@@ -461,7 +473,7 @@ span {
 
 .faq p {
     padding: 10px 0 80px 0;
-    color:  #333;
+    color: #333;
     text-align: center;
     font-family: "Meduim";
     font-size: 18px;
@@ -498,7 +510,7 @@ span {
 }
 
 .faq-card h4 {
-    color:#262626;
+    color: #262626;
     font-family: "SemiBold";
     font-size: 20px;
     font-weight: 600;
@@ -507,7 +519,7 @@ span {
 }
 
 .faq-card p {
-    color:  #333;
+    color: #333;
     font-family: "Meduim";
     font-size: 18px;
     font-weight: 500;
@@ -554,4 +566,70 @@ span {
     color: white;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #1A3129;
+    margin: 15% auto;
+    padding: 71px 40px;
+    border: 1px solid #888;
+    width: 80%;
+    color: white;
+}
+
+.modal_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 325px;
+    height: 141px;
+    background: #234338;
+    border: 1px solid #2C5446;
+    border-radius: 8px;
+}
+
+.modal-com {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.modal_info h2 {
+    align-items: center;
+}
+
+.modall {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
